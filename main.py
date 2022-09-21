@@ -1,4 +1,3 @@
-from select import select
 import pygame
 from board import board
 
