@@ -70,7 +70,8 @@ while running:
 
                 #Posso colocar o change_color dentro do interact()
                 #board[y][x].change_color()
-                moves = board[y][x].interact(board)
+                #Tem formas melhor de fazer isso
+                moves = board[y][x].interact(board, board[y][x].piece.color)
 
                 for move in moves:
                     board[move[1]][move[0]].set_way()

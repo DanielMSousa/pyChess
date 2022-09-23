@@ -1,4 +1,3 @@
-from code import interact
 from pieces import Piece, King, Queen, Knight, Tower, Bishop
 
 def return_piece(piece):
@@ -48,5 +47,5 @@ class CheckerSquare:
         else:
             self.color = '#769656'
     
-    def interact(self, board):
-        return self.piece.show_movement(self, board)
+    def interact(self, board, color):
+        return self.piece.show_movement(self, board, color)
